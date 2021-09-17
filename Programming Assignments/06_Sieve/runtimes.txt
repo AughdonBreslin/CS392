@@ -1,0 +1,33 @@
+Assignment : CS 392 - mtsieve
+Name       : Matthew Oyales & Audie Breslin
+Date       : 1 July 2021
+Pledge     : I pledge my honor that I have abided by the Stevens Honor System.
+
+Summary of results of running command:
+    time ./mtsieve -s100 -e200000000 -t<1 to max threads>
+
+                            Tds     Time
+./mtsieve -s100 -e200000000 -t1  : 0m3.728s
+./mtsieve -s100 -e200000000 -t2  : 0m2.202s
+./mtsieve -s100 -e200000000 -t3  : 0m1.758s
+./mtsieve -s100 -e200000000 -t4  : 0m1.547s
+./mtsieve -s100 -e200000000 -t5  : 0m1.505s
+./mtsieve -s100 -e200000000 -t6  : 0m1.464s
+./mtsieve -s100 -e200000000 -t7  : 0m1.480s
+./mtsieve -s100 -e200000000 -t8  : 0m1.414s
+./mtsieve -s100 -e200000000 -t9  : 0m1.362s
+./mtsieve -s100 -e200000000 -t10 : 0m1.392s
+./mtsieve -s100 -e200000000 -t11 : 0m1.283s
+./mtsieve -s100 -e200000000 -t12 : 0m1.304s
+./mtsieve -s100 -e200000000 -t13 : 0m1.313s
+./mtsieve -s100 -e200000000 -t14 : 0m1.243s
+./mtsieve -s100 -e200000000 -t15 : 0m1.286s
+./mtsieve -s100 -e200000000 -t16 : 0m1.197s
+
+The CPU of this computer (Matt's) is an AMD Ryzen 7 3800X 8-Core Processor.
+
+The time does not scale linearly as the number of threads increase. What we noticed from
+this round of testing is that performance does improve quickly initially, with just a few
+threads. But after that, the gains start to diminish and even fluctuates as more threads 
+are added. If this was charted on a graph, we could describe the gain of runtime as 
+plateauing, with some fluctuations along the way.
